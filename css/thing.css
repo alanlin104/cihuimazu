@@ -323,7 +323,6 @@ header nav a:hover {
   text-decoration: none; 
 }
 
-
 .footer .information a:hover {
   color: #ddd; 
 }
@@ -355,65 +354,28 @@ header nav a:hover {
 
 
 @media (max-width: 480px) {
-  /* 隱藏文字導航，保留漢堡 icon、logo、購物車、會員圖標 */
-  body,html{
-    margin: 0;
-    padding: 0;
-  }
-
-  header nav ul {
-      display: none;
-  }
-
-  .header-icons {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      padding: 10px;
-  }
-
-  .logo {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-  }
-
-
-  .hamburger-menu {
-      display: flex;
+  nav ul {
+      display: none; /* 隱藏標準導覽列 */
       flex-direction: column;
-      justify-content: space-around;
-      width: 30px;
-      height: 30px;
+  }
+  
+  .hamburger-menu {
+      display: block; /* 顯示漢堡菜單 */
       cursor: pointer;
+      font-size: 30px;
+  }
+  
+  .show-menu nav ul {
+      display: flex; /* 當按下漢堡菜單時顯示 */
   }
 
+  .wrap {
+      width: 100%;
+  }
 
   .description .table {
       display: flex;
       flex-direction: column;
   }
 
-  .icon-cell, .text-cell {
-      display: block;
-      width: 100%;
-  }
-
-
-  .hamburger-menu.open + #nav-links {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      background-color: #fff;
-      position: absolute;
-      top: 80px; /* 控制導航欄顯示的位置 */
-      left: 0;
-      padding: 10px 0;
-      box-shadow: 0 4px 2px -2px gray;
-      text-align: center;
-  }
-
-  header nav ul li {
-      margin: 15px 0;
-  }
 }

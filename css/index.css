@@ -3,23 +3,20 @@
     padding: 0;
 }
 
- /* 左下角連結區域 */
  .link-container {
     position: fixed;
     bottom: 100px;
     left: 280px;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* 控制上下兩排之間的間距 */
+    gap: 10px;
 }
 
-/* 每排連結的容器 */
 .link-row {
     display: flex;
-    gap: 10px; /* 控制每排中連結之間的間距 */
+    gap: 10px;
 }
 
-/* 連結樣式 */
 .link-container a {
     color: white;
     text-decoration: none;

@@ -1,4 +1,8 @@
-document.getElementById('hamburger-menu').addEventListener('click', function() {
-    this.classList.toggle('open');
-    document.getElementById('nav-links').classList.toggle('open');
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const header = document.querySelector('#header');
+
+    hamburgerMenu.addEventListener('click', function() {
+        header.classList.toggle('show-menu');
+    });
 });
