@@ -361,38 +361,40 @@ header nav a:hover {
     background-color: #F8E29C;
 }
 
+/* 三欄式佈局的主要容器樣式 */
 .container {
   display: flex;
+  flex-wrap: wrap; /* 自動換行 */
+  justify-content: space-between;
   gap: 20px;
-  justify-content: space-between; /* 確保欄位之間平均分布 */
 }
 
 /* 單一欄位的樣式 */
 .column {
-  flex: 1;
+  flex: 1 1 calc(33.333% - 20px); /* 每欄佔據容器的三分之一寬度，減去 gap */
   background-color: #f9f9f9;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
-  width: 300px;
+  max-width: calc(33.333% - 20px); /* 限制最大寬度 */
 }
 
-/* 圖片的樣式 */
+/* 圖片樣式 */
 .column img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* 標題的樣式 */
+/* 標題樣式 */
 .column h2 {
   font-size: 1.5em;
   color: #333;
   margin-top: 10px;
 }
 
-/* 描述的樣式 */
+/* 描述文字樣式 */
 .column p {
   font-size: 1em;
   color: #666;
@@ -400,17 +402,10 @@ header nav a:hover {
   line-height: 1.6;
 }
 
-/* 小螢幕調整，讓欄位垂直排列 */
+/* 小螢幕調整：當畫面寬度小於 768px 時，欄位會垂直排列 */
 @media (max-width: 768px) {
-  .container {
-      flex-direction: column;
+  .column {
+      flex: 1 1 100%;
+      max-width: 100%;
   }
-}
-
-.histroy{
-  width: 90%;
-}
-
-.histroy img{
-width: 100%;
 }
