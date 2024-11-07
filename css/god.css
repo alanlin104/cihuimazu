@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 設定為邊框框架模型，避免額外的寬度/高度計算 */
+  }
+  
+  wrap{
+    width: 100%;
+  }
+  
+  body {
+    background-color: #240044; /* 設定網頁背景顏色 */
+    color: #ffffff; /* 頁面文字顏色設為白色，確保對比度 */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1{
+    font-size: 96px;
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+  }
+  
+  h2{
+    font-size: 64px;
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+  }
+  
+  h3{
+    font-size: 48px;
+    color: #F8E29C;
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+  }
+  
+  h4{
+    font-size: 28px;
+    color: #240044;
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+  }
+  
+  p{
+    font-size: 24px;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中（可選） */
+  }
+  
+  .headertxt {
+    color: white; /* 連結的文字顏色 */
+    text-decoration: none; /* 去掉底線 */
+    font-size: 36px; /* 連結文字大小 */
+    transition: background-color 0.3s ease; /* 過渡效果 */
+    display: flex;
+    align-items: center; /* 垂直置中 */
+    justify-content: center; /* 水平置中（可選） */
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+  }
+  
+  header nav ul {
+    list-style: none; /* 移除項目符號 */
+    padding: 0; /* 移除內距 */
+    margin: 0; /* 移除外距 */
+    display: flex;
+    justify-content: space-between;   /* 讓各項目水平分佈 */
+    align-items: center; 
+  }
+  
+  header nav ul li{
+    display:inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  header nav a:hover {
+    background-color: #e61313; /* 滑鼠懸停時的背景顏色 */
+  }
+  
+  .cart{
+    width: 58px;
+    height: 58px;
+  }
+  
+  .cart img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logo{
+    width: 210px;
+    height: 67px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .logo img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .lxgw-wenkai-tc-regular {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .banner{
+    width: 100%;
+    height: 665px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .banner img{
+    width: 100%;
+    display: block;
+  }
+  
+  .marquee {
+    overflow: hidden; /* 隱藏溢出的部分 */
+    white-space: nowrap; /* 不換行 */
+    box-sizing: border-box;
+    height: 44px;
+    background-color: #A20323;
+    margin:0;;
+  }
+  
+  .marquee p {
+    display: inline-block;
+    padding-left: 100%; /* 開始時的位置 */
+    animation: marquee 40s linear infinite; /* 設定動畫 */
+    font-size: 30px;
+    color: white;
+  }
+  
+  /* 跑馬燈動畫 */
+  @keyframes marquee {
+    0% {
+        transform: translateX(0); /* 從右側開始 */
+    }
+    100% {
+        transform: translateX(-100%); /* 滾動到左側 */
+    }
+  }
+  
+  .options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 每行兩列 */
+    gap: 20px; /* 控制項目之間的間距 */
+    margin: 20px;
+  }
+  
+  .thing-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #DBDEE5;
+    border-radius: 100px; /* 圓角邊框 */
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .thing-item h3 {
+    margin: 0;
+    font-size: 1.4em;
+  }
+  
+  .thing-item:hover {
+    background-color: #F8E29C;
+  }
+
+  .order{
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.memory{
+    text-align: center;
+}
+
+.memory-carousel {
+    position: relative;
+    max-width: 90%;
+    width: 1520px;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.slides {
+    max-width: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.slides img {
+    width: 100px;
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: transform 0.5s, opacity 0.5s;
+    cursor: pointer;
+}
+
+.slides img.active {
+    width: 200px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.description {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+  .moonblocks{
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-items: center
+  }
+  
+  .moonblocks img{
+    width: 224px;
+  }
+  
+  .godsentence {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  #input-section {
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+    height: 40px;
+  }
+  
+  #wish-input {
+    font-size: 1em; /* 增大輸入框字體 */
+    padding: 15px; /* 增加內邊距 */
+    width: 80%; /* 輸入框寬度自適應 */
+    max-width: 400px; /* 最大寬度限制 */
+    border: 2px solid #fff; /* 邊框樣式 */
+    border-radius: 5px; /* 圓角邊框 */
+    background-color: rgba(255, 255, 255, 0.8); /* 輕微透明的背景 */
+    color: #240044; /* 輸入框文字顏色 */
+  }
+  
+  .cast {
+    text-align: center; /* 將按鈕居中 */
+    margin-top: 20px; /* 增加上邊距 */
+    margin-bottom: 40px;
+  }
+  #cast-button {
+    font-size: 1.5em; /* 放大筊杯按鈕字體 */
+    padding: 10px 20px; /* 增加內邊距 */
+    background-color: #A20323; /* 背景顏色 */
+    color: #240044; /* 按鈕文字顏色 */
+    cursor: pointer; /* 鼠標變為指針 */
+    border: none; /* 去掉按鈕邊框 */
+    border-radius: 5px; /* 圓角邊框 */
+    display: inline-block; /* 使其為區塊元素，便於置中 */
+  }
+  
+  #cast-button:hover {
+    background-color: #F8E29C;
+  }
+  
+  #result {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+  }
+  
+  .description{
+    padding: 40px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .icon-cell {
+    width: 300px; /* 圖片儲存格寬度，可根據需求調整 */
+    vertical-align: top;
+    padding-right: 10px;
+  }
+  
+  .text-cell {
+    vertical-align: top;
+    padding: 10px;
+  }
+  
+  .icon {
+    width: 300px; /* 調整圖片的寬度 */
+    height: auto;
+  }
+  
+  .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #A20323;
+      color: #fff;
+      font-size: 24px;
+  }
+  
+  .footer-left {
+      flex: 1;
+      margin-left: 100px;
+      margin-right: 20px;
+  }
+  
+  .footer-logo {
+      max-width: 300px; /* Logo的大小可調整 */
+      min-width: 200px;
+  }
+  
+  .footer-center {
+      flex: 1;
+      text-align: center;
+  }
+  
+  .footer-links {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .footer-links li {
+      margin: 10px 0;
+  }
+  
+  .footer-links a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .footer-right {
+      flex: 1;
+      text-align: left;
+      margin-right: 100px;
+      margin-left: 20px;
+      font-size: 16px;
+  }
+  
+  /* Footer 超連結樣式 */
+  .footer .information a {
+    color: white;            /* 設定文字顏色為白色 */
+    text-decoration: none;   /* 移除底線 */
+  }
+  
+  /* 若超連結需要在滑鼠懸停時改變顏色 */
+  .footer .information a:hover {
+    color: #ddd;             /* 懸停時顏色變淺，讓使用者知道可以點擊 */
+  }
+  
+  
+  .subscribe-form {
+      display: inline-block;
+  }
+  
+  .subscribe-form input[type="email"] {
+      padding: 8px;
+      margin-right: 5px;
+      border: none;
+      border-radius: 4px;
+  }
+  
+  .subscribe-form button {
+      padding: 8px 12px;
+      border: none;
+      background-color: #240044;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size:16px;
+  }
+  
+  .subscribe-form button:hover {
+      background-color: #F8E29C;
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* 隱藏原本的導航選單 */
+    header nav ul {
+        display: none;
+    }
+  
+    /* 漢堡選單顯示 */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+  
+    .hamburger-menu span {
+        background-color: #333;
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 6px auto;
+        transition: all 0.3s;
+    }
+  
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+  
+    .nav-links.open {
+        display: flex;
+    }
+  
+    .nav-links li {
+        text-align: center;
+        padding: 15px;
+    }
+  
+    .headerbtn {
+        font-size: 16px;
+    }
+  }
+  
+  /* 漢堡選單動畫效果 */
+  .hamburger-menu.open span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+  
+  .hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+
+  .order{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .order img{
+    width: 100%;
+    justify-content: center;
+  }

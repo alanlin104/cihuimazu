@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=LXGW+WenKai+TC:wght@300;400;700&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url('assets/index.jpg'); /* 替換成您的背景圖片 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background-position: left center; /* 小螢幕下將背景居中 */
+                background-size: cover;
+            }
+            .link-row {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <!-- 上排的兩個連結 -->
+        <div class="link-row">
+            <a href="http://127.0.0.1:5500/thing.html">求事</a>
+            <a href="http://127.0.0.1:5500/god.html">求神</a>
+        </div>
+
+        <!-- 下排的兩個連結 -->
+        <div class="link-row">
+            <a href="http://127.0.0.1:5500/location.html">所在</a>
+            <a href="http://127.0.0.1:5500/story.html">故事</a>
+        </div>
+    </div>
+
+    <div class="smoke"></div>
+    <div class="smoke"></div>
+    <div class="smoke"></div>
+    <div class="smoke"></div>
+    <div class="smoke"></div>
+    <div class="smoke"></div>
+    <div class="smoke"></div>
+    <div class="smoke"></div>
+    
+</body>
+</html>

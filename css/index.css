@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ /* 左下角連結區域 */
+ .link-container {
+    position: fixed;
+    bottom: 100px;
+    left: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 控制上下兩排之間的間距 */
+}
+
+/* 每排連結的容器 */
+.link-row {
+    display: flex;
+    gap: 10px; /* 控制每排中連結之間的間距 */
+}
+
+/* 連結樣式 */
+.link-container a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 50px;
+    transition: background-color 0.3s;
+    font-family: 'LXGW WenKai Mono TC', sans-serif;
+}
+
+.link-container a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.smoke {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 120px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
+    opacity: 0.8;
+    animation: rise 5s infinite ease-in-out;
+    transform-origin: bottom center;
+}
+
+/* 調整煙霧的動畫使其更明顯 */
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(0.6) rotate(0deg);
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-350px) scale(1.2) rotate(15deg);
+        opacity: 0;
+    }
+}
+
+/* 多個煙霧效果，讓效果更自然 */
+.smoke:nth-child(2) {
+    left: 47%;
+    animation-duration: 6.5s;
+    animation-delay: 1s;
+}
+
+.smoke:nth-child(3) {
+    left: 53%;
+    animation-duration: 4.8s;
+    animation-delay: 1.5s;
+}
+
+.smoke:nth-child(4) {
+    left: 55%;
+    animation-duration: 5.5s;
+    animation-delay: 2s;
+}

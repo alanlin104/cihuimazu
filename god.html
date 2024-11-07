@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>求神</title>
+    <link rel="stylesheet" href="css/god.css">
+    <script src="js/god.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=LXGW+WenKai+TC:wght@300;400;700&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div id="header">
+            <header>
+                <nav>
+                    <ul>
+                        <li class="cart">
+                            <a href="cart.html">
+                                <img src="assets/cart.png"alt="cart">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/thing.html" class="headerbtn">
+                                    <div class="headertxt">求事</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/god.html" class="headerbtn">
+                                    <div class="headertxt">求神</div>
+                            </a>
+                        </li>
+                        <li class="logo">
+                            <a href="http://127.0.0.1:5500/index.html">
+                                <img src="assets/logo.png" alt="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/location.html" class="headerbtn">
+                                    <div class="headertxt">所在</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a herf="http://127.0.0.1:5500/story.html" class="headerbtn">
+                                    <div class="headertxt">故事</div>
+                            </a>
+                        </li>
+                        <li class="member">
+                            <a herf="member.html">
+                                <img src="assets/member.png"alt="member">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    </div>   
+    <div class="wrap">
+        <div class="banner">
+            <img src="assets/banner_3.png" alt="Image 2">
+        <div class="marquee">
+            <p>求姻緣 · 林忠毅　　求光明 · 林忠二　　消災祭解補運 · 林忠三　　安太歲 · 林忠四　　光明燈 · 林忠五</p>
+    </div>
+    <div class="wrap">
+        <div class="options">
+            <a href="" class="thing-item">
+                <h4>參拜順序</h4>
+            </a>
+            <a href="" class="thing-item">
+                <h4>神明介紹</h4>
+            </a>
+            <a href="" class="thing-item">
+                <h4>媽祖故事</h4>
+            </a>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="order">
+            <h2>參 拜 順 序</h2>
+        </div>
+        <div class="order">
+            <br>
+            <img src="assets/order.jpg" alt="moonblocks">
+            <br>
+            <p>1 板橋媽祖殿 ⭢ 2 天公殿殿 ⭢ 3 功德堂殿 ⭢ 4 鎮殿媽祖殿殿 ⭢ 5 虎爺殿殿 ⭢ 6 凌霄寶殿殿 ⭢ 7 光明殿殿 ⭢ 8 太歲殿殿 ⭢ 9 圓通寶殿</p>
+            <br>
+        </div>
+    </div>
+    <div class=" wrap">
+        <div class="memory">
+        <h2>神 明 介 紹</h2>
+        </div>
+        <div class="carousel-container">
+            <!-- 第一組 -->
+            <div class="memory-carousel">
+                <button class="prev" onclick="prevSlide(0)">&#10094;</button>
+                <div class="slides" data-group="0">
+                    <img src="assets/god/3F/Beidou.png" alt="Image 1" onclick="showDescription(0, 0)">
+                    <img src="assets/god/3F/Emperor.png" alt="Image 2" onclick="showDescription(0, 1)">
+                    <img src="assets/god/3F/Nandou.png" alt="Image 3" onclick="showDescription(0, 2)">
+                </div>
+                <button class="next" onclick="nextSlide(0)">&#10095;</button>
+                <div class="description" id="description0">點擊圖片認識神明</div>
+            </div>
+        
+            <!-- 第二組 -->
+            <div class="memory-carousel">
+                <button class="prev" onclick="prevSlide(1)">&#10094;</button>
+                <div class="slides" data-group="1">
+                    <img src="assets/god/2F/Ksitigarbha.png" alt="Image 1" onclick="showDescription(1, 0)">
+                    <img src="assets/god/2F/sages.png" alt="Image 2" onclick="showDescription(1, 1)">
+                    <img src="assets/god/2F/Mazu2.png" alt="Image 1" onclick="showDescription(1, 2)">
+                    <img src="assets/god/2F/Buddha.png" alt="Image 2" onclick="showDescription(1, 3)">
+                    <img src="assets/god/2F/Marshal.png" alt="Image 1" onclick="showDescription(1, 4)">
+                    <img src="assets/god/2F/Guanyin.png" alt="Image 2" onclick="showDescription(1, 5)">
+                    <img src="assets/god/2F/Tiger.png" alt="Image 1" onclick="showDescription(1, 6)">
+                    <img src="assets/god/2F/ThreeOfficials.png" alt="Image 2" onclick="showDescription(1, 7)">
+                    <img src="assets/god/2F/Guangming.png" alt="Image 1" onclick="showDescription(1, 8)">
+                    <img src="assets/god/2F/birth.png" alt="Image 2" onclick="showDescription(1, 9)">
+                    <img src="assets/god/2F/Wenchang.png" alt="Image 1" onclick="showDescription(1, 10)">
+                    <img src="assets/god/2F/Guan.png" alt="Image 2" onclick="showDescription(1, 11)">
+                </div>
+                <button class="next" onclick="nextSlide(1)">&#10095;</button>
+                <div class="description" id="description1">點擊圖片認識神明</div>
+            </div>
+        
+            <!-- 第三組 -->
+            <div class="memory-carousel">
+                <button class="prev" onclick="prevSlide(2)">&#10094;</button>
+                <div class="slides" data-group="2">
+                    <img src="assets/god/1F/mazu.png" alt="Image 1" onclick="showDescription(2, 0)">
+                    <img src="assets/god/1F/wealth.png" alt="Image 2" onclick="showDescription(2, 1)">
+                    <img src="assets/god/1F/Chitose.png" alt="Image 1" onclick="showDescription(2, 0)">
+                    <img src="assets/god/1F/Doumu.png" alt="Image 2" onclick="showDescription(2, 1)">
+                    <img src="assets/god/1F/Thousand.png" alt="Image 1" onclick="showDescription(2, 0)">
+                    <img src="assets/god/1F/Kui.png" alt="Image 2" onclick="showDescription(2, 1)">
+                    <img src="assets/god/1F/moon.png" alt="Image 1" onclick="showDescription(2, 0)">
+                    <img src="assets/god/1F/Confucius.png" alt="Image 2" onclick="showDescription(2, 1)">
+                    <!-- 其餘圖片省略，共8張 -->
+                </div>
+                <button class="next" onclick="nextSlide(2)">&#10095;</button>
+                <div class="description" id="description2">點擊圖片認識神明</div>
+            </div>
+        </div>
+    <div class="wrap">
+        <div class="order">
+            <h2>媽祖故事</h2>
+        </div>
+        <div class="order">
+            <img src="assets/mazu.jpg" alt="moonblocks">
+            <p>宋太祖建隆元年（西元960年）三月二十三日，媽祖誕生於福建莆田湄洲林家，父為書宦子弟林維愨，母王氏，因媽祖出生竟月未聞啼聲，因此取名「默娘」。<br> 
+                默娘慧靈天授，五歲就能誦唸《觀音經》，到了七歲，《論語》、《孟子》、《左傳》等書已能過目不忘，八歲進私塾受課，至十二歲時經史子集均已讀完。<br>
+                及長，默娘因見湄洲漁民出海遇難，遺孀常哭的肝腸寸斷，乃立誓若能制服惡海風浪，願減壽三十年，以護漁民，此一意念感動了觀世音菩薩，遂隨機教化，善導引入仙界，這也是漁民崇信媽祖的主因之一。<br>
+                默娘在眾神的引領下，歷經許多考驗，終於在宋太宗雍熙四年（西元987年）位證正道，其事蹟如：窺井得金甲神贈送用來凌空飛行的銅符、伏機出靈救父失兄、鐵馬馳海救鄉民、湄峰祈雨疏大旱、菖蒲祛病保安康、筊杯鎮壓龜精伏、計擒收服高里鬼、降服應佑列仙班、收服晏公保漁民、千里順風將軍隨、湄嶼仙樂迎飛昇等等。</p>
+        </div>
+    </div>    
+    <div class="wrap">
+        <div class="godsentence">
+            <h2>神 明 每 日 一 語</h2>
+        </div>
+        <div class="moonblocks">
+            <img id="moonblocks" src="assets/moonblocks_1.png" alt="moonblocks">
+        </div>
+        <div id="input-section" class="asksentence">
+            <input type="text" id="wish-input" placeholder="輸入你的願望或問題">
+        </div>
+        <div id="result" class="asksentence">
+            <p id="result-text">然後按下</p>
+        </div>
+        <div class="cast">
+            <h3 id="cast-button">筊 杯</h3>
+        </div>
+    </div>
+    <div class="wrap">
+        <footer class="footer">
+            <div class="footer-left">
+                <a href="http://127.0.0.1:5500/index.html">
+                <img src="assets/logo.png" alt="Logo" class="footer-logo"></a>
+            </div>
+            
+            <div class="footer-center">
+                <ul class="footer-links">
+                    <li><a href="http://127.0.0.1:5500/thing.html">求事</a></li>
+                    <li><a href="http://127.0.0.1:5500/god.html">求神</a></li>
+                    <li><a href="http://127.0.0.1:5500/location.html">所在</a></li>
+                    <li><a href="http://127.0.0.1:5500/story.html">故事</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-right">
+                <form class="subscribe-form">
+                    <label for="email-input">訂閱電子報</label>
+                    <input type="email" id="email-input" placeholder="輸入您的Email">
+                    <button type="submit">訂閱</button>
+                </form>
+                <div class="information">
+                    <a>電話 - 02-2965-0014</a>
+                    <br>
+                    <a href="https://maps.app.goo.gl/dVVLiBGyp7ds9E4w5" target="_blank">地址 - 新北市板橋區挹秀里1鄰府中路81號</a>
+                    <br>
+                    <a href="https://www.facebook.com/BanQiaoCiHuiGong" target="_blank">Facebook - 板橋慈惠宮</a>
+                </div>
+            </div>
+        </footer>   
+    </div> 
+</body>
+</html>
